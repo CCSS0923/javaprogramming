@@ -1,0 +1,21 @@
+package OOP;
+
+public class Ex702 {
+	
+	static void myMethod1() {
+		System.out.println("정적 메소드 호출");
+	}
+	public void myMethod2() {
+		System.out.println("인스턴스 메소드 호출");
+	}
+
+	public static void main(String[] args) {
+		myMethod1();
+		//myMethod2();
+		
+		Ex702 myObj = new Ex702();
+		myObj.myMethod2();
+		
+	}
+
+}

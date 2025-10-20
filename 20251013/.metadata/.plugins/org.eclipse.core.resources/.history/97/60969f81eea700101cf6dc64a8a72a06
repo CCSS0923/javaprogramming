@@ -1,0 +1,12 @@
+package com.section11;
+
+public class Ex101 {
+
+	public static void main(String[] args) {
+		Cat c = new Cat();
+		
+		
+
+	}
+
+}

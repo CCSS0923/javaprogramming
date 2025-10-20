@@ -1,0 +1,18 @@
+package pkg9;
+
+abstract class Vehicle {
+	abstract void printPrice();
+}
+abstract class TwoWheeler extends Vehicle {
+	abstract void printPrice();
+}
+abstract class FourWheeler extends Vehicle {}
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

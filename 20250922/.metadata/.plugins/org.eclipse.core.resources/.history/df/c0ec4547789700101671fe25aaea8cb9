@@ -1,0 +1,38 @@
+package pkg9;
+
+abstract class Vehicle {
+	abstract void printPrice();
+}
+
+abstract class TwoWheeler extends Vehicle {
+	abstract void printPrice();
+}
+
+abstract class FourWheeler extends Vehicle {}
+
+class Bike extends TwoWheeler {
+	   public void printPrice() {
+	       System.out.println("가격 : 150,000");	   }
+	   public void printType() { 
+	      System.out.println("이것은 자전거입니다.");	   } 
+	   public void printBrand() { 
+	     System.out.println("브랜드 : 삼천리");	  }
+}
+
+class Car extends FourWheeler {
+	   public void printPrice() {
+	      System.out.println("가격 : 50,000,000");   }
+	   public void printType() { 
+	      System.out.println("이것은 자동차입니다.");	   } 
+	   public void printBrand() {
+	      System.out.println("브랜드 : BMW");	   }
+}
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

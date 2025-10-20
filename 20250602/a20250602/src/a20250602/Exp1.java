@@ -1,0 +1,18 @@
+package a20250602;
+
+public class Exp1 {
+
+	public static void main(String[] args) {
+		Persion1 p1 = new Persion1();
+		
+//		System.out.println(p1.name);	// private?
+//		System.out.println(p1.age);
+//		System.out.println(p1.address);
+		
+		System.out.println(p1.getName());
+		System.out.println(p1.getAge());
+		System.out.println(p1.getAddress());
+
+	}
+
+}

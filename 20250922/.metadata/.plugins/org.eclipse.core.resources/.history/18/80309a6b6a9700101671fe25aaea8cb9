@@ -1,0 +1,15 @@
+package pkg1;
+
+class Parent {
+	void print( ) { System.out.println("Parent - print"); }
+	void test ( ) { System.out.println("Parent - test"); }
+}
+
+public class Code777 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

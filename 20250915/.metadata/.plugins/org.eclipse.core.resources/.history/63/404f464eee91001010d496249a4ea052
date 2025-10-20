@@ -1,0 +1,16 @@
+class Sj {
+	int kor;
+	int eng;
+	int mat;
+	int tot;
+	float avg;
+}
+
+public class Code777 {
+
+	public static void main(String[] args) {
+		Sj s1 = new Sj();
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package pkg8;
+
+class Animal {
+	void displayInfo() {
+		System.out.print("나는 동물입니다.");
+	}
+	void printSound() {
+		System.out.print("모든 동물은 소리를 낸다.");
+	}
+}
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

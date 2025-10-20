@@ -1,0 +1,17 @@
+
+public class h20250519 {
+
+	public static void main(String[] args) {
+		String s1 = "Java";
+		String s2 = "java";
+		String s3 = new String("Java");
+		String s4 = new String("java");
+		
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		System.out.println(s4);
+
+	}
+
+}

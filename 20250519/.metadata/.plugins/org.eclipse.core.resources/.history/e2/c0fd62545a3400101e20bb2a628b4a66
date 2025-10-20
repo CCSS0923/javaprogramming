@@ -1,0 +1,14 @@
+
+public class Op1 {
+
+	public static void main(String[] args) {
+		
+		Dog d = new Dog();
+		
+		d.breed = "진돗개";
+		d.age = 12;
+		d.color = "brown";
+
+	}
+
+}

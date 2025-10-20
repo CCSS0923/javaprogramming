@@ -1,0 +1,21 @@
+/*class Book {
+	String title;
+	int price;
+	
+	Book(String title, int price) {
+		this.title = title;
+		this.price = price;
+	}
+}
+*/
+
+public class Code999 {
+	
+	public static void main(String[] args)
+	{
+		Book b1 = new Book("자바 기초", 30000);
+		Book b2 = new Book("파이썬 입문", 25000);
+		System.out.println(b1.title + ", " + b1.price);
+		System.out.println(b2.title + ", " + b2.price);
+	}
+}

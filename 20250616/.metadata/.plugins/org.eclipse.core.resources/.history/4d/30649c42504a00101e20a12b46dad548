@@ -1,0 +1,26 @@
+package ssi;
+
+class Parent2{
+	String name = "홍사또";
+
+	Parent2(){
+		System.out.println("부모 이름 : " + name);
+	}
+}
+class Child2 extends Parent2{
+	String name = "홍길동";
+	
+	Child2(){
+//		super();
+		System.out.println("자식 이름 : " + name);
+	}
+}
+
+public class Inheritance06 {
+
+	public static void main(String[] args) {
+		Child2 objchild = new Child2();
+
+	}
+
+}

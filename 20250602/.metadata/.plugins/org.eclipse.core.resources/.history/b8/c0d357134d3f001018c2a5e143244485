@@ -1,0 +1,15 @@
+package a20250602;
+
+public class Cat2{
+	String breed;
+	String color;
+}
+
+public class Ex705 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,31 @@
+
+public class Ex20250901 {
+
+	public static void main(String[] args) {
+
+		// 구입 및 판매 가격 (품목 순서: 캔커피, 삼각김밥, 바나나맛우유, 도시락, 콜라, 새우깡)
+		int[] buyPrices = { 500, 900, 800, 3500, 700, 1000 };
+		int[] sellPrices = { 1800, 1400, 1800, 4000, 1500, 2000 };
+
+		// 판매 수량 (문제의 판매 내역 순서 기준: 캔커피, 삼각김밥, 바나나맛우유, 도시락, 콜라, 새우깡)
+		int[] soldQtys = { 5, 0, 2, 4, 1, 4 };
+		// 구입 수량 (문제의 구입 내역 기준)
+		int[] buyQtys = { 0, 10, 0, 5, 0, 0 };
+
+		int totalProfit = 0;
+
+		for (int i = 0; i < 6; i++) {
+			int profitPerItem = sellPrices[i] - buyPrices[i];
+			int profit = profitPerItem * soldQtys[i];
+			totalProfit += profit;
+		}
+
+		// 순이익: 전체 이익 - 세금(10%)
+		double tax = totalProfit * 0.10;
+		double netProfit = totalProfit - tax;
+
+		System.out.printf("오늘의 순 이익금: %.0f원\n", netProfit);
+
+	}
+
+}

@@ -1,0 +1,17 @@
+
+public class b20250519 {
+
+	public static void main(String[] args) {
+		double[] gradeArr = {90.5, 71.6, 88.8, 79, 40, 60, 70, 90, 59.5, 79.7};
+		double sum = 0.0;
+		
+		for(int i = 0; i < gradeArr.length; i++) {
+			sum += gradeArr[i];
+		}
+		double average = sum / gradeArr.length;
+		
+		System.out.println("합계: " + sum);
+		System.out.format("평균: %2f", average);
+	}
+
+}

@@ -1,0 +1,35 @@
+package pkg2;
+
+class Parent {
+	void print( ) { System.out.println("Parent - print"); }
+	void test( ) { System.out.println("Parent - test"); }
+}
+
+class Child extends Parent {
+	void print( ) { System.out.println("child - print"); }
+	void check( ) { System.out.println("child - check"); }
+	void printParent( ) { super.print(); }
+}
+
+public class Code777 {
+
+	public static void main(String[] args) {
+		Parent p = new Parent();
+		Child c = new Child();
+		
+		p.print();
+		p.test();
+		
+		c.print();
+		c.check();
+		c.printParent();
+		
+		Parent x = new Child();
+		
+		x.print();
+		x.test();
+		
+		
+	}
+
+}

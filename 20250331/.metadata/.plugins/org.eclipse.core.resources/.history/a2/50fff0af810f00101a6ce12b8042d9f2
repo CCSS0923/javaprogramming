@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+
+public class Practice {
+
+	public static void main(String[] args) {
+		System.out.println("달러($)를 입력해주세요");
+		
+		Scanner s = new Scanner(System.in);
+
+		int x = s.nextInt();
+		
+		int d = 1467;
+		
+		System.out.println(x + "달러($) = " + (x*d));
+	}
+
+}

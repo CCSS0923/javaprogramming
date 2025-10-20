@@ -1,0 +1,30 @@
+
+public class Ex20250901 {
+
+	public static void main(String[] args) {
+		//구매 가격과 판매 가격 배열
+		int[] buyPrices = { 500, 900, 800, 3500, 700, 1000 };
+		int[] sellPrices = { 1800, 1400, 1800, 4000, 1500, 2000 };
+		//구매 갯수와 판매 갯수 배열
+		int[] soldQtys = { 5, 0, 2, 4, 1, 4 };
+		int[] buyQtys = { 0, 10, 0, 5, 0, 0 };
+		//이익금 변수
+		int totalProfit = 0;
+		//물건당 판매가격 - 구매가격
+		for (int i = 0; i < 6; i++) {
+			int profitPerItem = sellPrices[i] - buyPrices[i];
+			//물건당 이익금
+			int profit = profitPerItem * soldQtys[i];
+			//이익금 총합
+			totalProfit += profit;
+		}
+		//세금 계산
+		double tax = totalProfit * 0.10;
+		//이익금 - 세금 = 순이익금
+		double netProfit = totalProfit - tax;
+
+		System.out.printf("오늘의 순 이익금: %.0f원\n", netProfit);
+
+	}
+
+}

@@ -1,0 +1,171 @@
+import java.util.Scanner;
+
+public class Ex00 {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		System.out.println("유한대학교");
+		System.out.println("컴퓨터\n 소프트웨어공학");
+		
+/*		System.out.println("컴퓨터 소프트웨어공학");
+		System.out.println("컴퓨터 소프트웨어공학");
+		System.out.println("컴퓨터 소프트웨어공학");	*/
+		
+/*		int a = 10;
+		int b = 5;
+		int c = 3;
+		
+		System.out.println(a + b);
+		System.out.println(a - b);
+		System.out.println(a * b);
+		System.out.println(a % b);
+		System.out.println(a % c);
+		
+		System.out.println(++a + -b);
+		System.out.println(a == b);
+		System.out.println(a != b);
+		System.out.println(a <= 10 || b < 5);
+		System.out.println(a < 10 && b < 5);
+		
+		int hap = 0;
+		hap = 0;
+		
+		for(int i = 1; i <= 100; i++)
+		{
+			if(i % 4 == 0)
+			{
+				continue;
+			}
+			hap += i;
+		}
+		System.out.println(hap);
+		
+		hap = 0;
+		int l = 1;
+		while(l <= 100)
+		{
+		    if(l % 3 == 0 && l % 5 == 0)
+		    {
+		        hap += l;
+		    }
+		    l++;
+		}
+		System.out.println(hap);
+		
+		for(int i = 1; i <= 10; i ++)
+		{
+			hap += i;
+			System.out.println(hap);
+		}
+		System.out.println(hap);
+		
+		System.out.println("5개 수를 순서대로 입력 하세요");
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		int u = s.nextInt();
+		int x = s.nextInt();
+		int y = s.nextInt();
+		int z = s.nextInt();
+		
+		int m = t;
+		
+		if(u > m) { m = u; }
+		if(x > m) { m = x; }
+		if(y > m) { m = y; }
+		if(z > m) { m = z; }
+		
+		System.out.println(m);
+		*/
+		for(int i = 6; i <= 8; i++)
+		{
+			System.out.println(i + "단");
+			for(int j = 1; j <= 9; j++)
+			{
+				System.out.println(i + " * " + j + " = " + (i * j));
+			}
+		}
+		
+		int[][]a = new int[3][5];
+		
+		for(int i = 6; i <= 8; i++)
+		{
+			for(int j = 1; j <= 9; j++)
+			{
+				System.out.println(i + " * " + j + " = " + (i*j));
+			}
+			System.out.println();
+		}
+		
+		int[][]b = new int[3][5];
+		
+		for(int i = 1; i <= 3; i++)
+		{
+			for(int j = 0; j < 5; j++)
+			{
+				b[i-1][j] = i + 3 * j;
+				System.out.print(b[i-1][j] + " ");
+			}
+			System.out.println();
+		}
+		
+		
+/*		for(int i = 1; i <= 4; i++)
+		{
+			for(int j = 1; j <= i; j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		for(int i = 5; i >= 1; i--)
+		{
+			for(int j = 1; j <= i; j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		for(int i = 5; i >= 1; i--)
+		{
+			for(int j = 1; j < i; j++)
+			{
+				System.out.print(" ");
+			}
+			for(int k = 5; k >= i; k--)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		for(int i = 4; i >= 1; i--)
+		{
+			for(int j = 5; j > i; j--)
+			{
+				System.out.print(" ");
+			}
+			for(int k = 1; k <= i; k++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+		
+		for (int i = 2; i <= 10; i++) {
+            boolean isPrime = true;
+            for (int j = 2; j <= i - 1; j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                System.out.print(i + " ");
+            }
+        }*/
+	}
+
+}

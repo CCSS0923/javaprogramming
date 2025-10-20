@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class d20250414 {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("입차시간을 입력해주세요.");
+		System.out.print("시간: ");
+		int in_h = s.nextInt();
+		System.out.print("분: ");
+		int in_m = s.nextInt();
+		
+		System.out.println("출차시간을 입력해주세요.");
+		System.out.print("시간: ");
+		int out_h = s.nextInt();
+		System.out.print("분: ");
+		int out_m = s.nextInt();
+		
+		int time = (out_h * 60 + out_m) + (in_h * 60 + in_m); 
+		
+	}
+
+}
+

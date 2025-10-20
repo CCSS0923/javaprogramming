@@ -1,0 +1,25 @@
+package pkg7;
+
+abstract class Animal {
+	void displayInfo() {
+		System.out.println("나는 동물입니다.");
+	}
+	abstract void printSound();
+}
+class Cat extends Animal {
+	public void printSound() {
+		System.out.println("야 ~ 옹");
+	}
+}
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		Cat obj = new Cat();
+		
+		obj.displayInfo();
+		obj.printSound();
+		
+	}
+
+}

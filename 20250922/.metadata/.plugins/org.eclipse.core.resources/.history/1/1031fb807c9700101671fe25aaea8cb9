@@ -1,0 +1,14 @@
+package pkg9;
+
+abstract class Shape {
+	
+}
+
+public class Ex91 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,19 @@
+
+public class a20250414 {
+
+	public static void main(String[] args) {
+		int i = 1;
+		int sum = 0;
+		while(i <= 20) {
+			if(i % 3 == 0) {
+				continue;
+			}
+			sum += i;
+			i++;
+			System.out.print(i);
+		}
+		System.out.println("1~20합: " + sum);
+		
+	}
+
+}

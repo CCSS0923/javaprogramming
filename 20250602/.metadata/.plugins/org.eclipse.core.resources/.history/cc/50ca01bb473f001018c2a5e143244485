@@ -1,0 +1,16 @@
+package a20250602;
+
+public class Ex701 {
+
+	public static void main(String[] args) {
+		Cat c = new Cat();
+		
+		c.breed = "야옹이";
+		c.color = "흰색";
+		
+		System.out.println("품종은 : " + c.breed);
+		System.out.println("색깔은 : " + c.color);
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package OOP;
+
+public class Ex701 {
+
+	public static void main(String[] args) {
+		Cat catObj = new Cat();
+		
+		catObj.breed = "나비";
+		catObj.color = "흰색";
+		catObj.age = 5;
+		catObj.weight = 15.7;
+		
+		System.out.println("품종 : " + catObj.breed);
+		System.out.println("색깔 : " + catObj.color);
+		System.out.println("나이 : " + catObj.age + "살");
+		System.out.println("몸무게 : " + catObj.weight + "kg");
+		
+		catObj.eat();
+		catObj.scratch();
+		catObj.meow();
+	}
+
+}

@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class d20250414 {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("입차시간을 입력해주세요.");
+		System.out.println("일: ");
+		int in_d = s.nextInt();
+		System.out.print("시간: ");
+		int in_h = s.nextInt();
+		System.out.print("분: ");
+		int in_m = s.nextInt();
+		
+		System.out.println("출차시간을 입력해주세요.");
+		System.out.println("일: ");
+		int out_d = s.nextInt();
+		System.out.print("시간: ");
+		int out_h = s.nextInt();
+		System.out.print("분: ");
+		int out_m = s.nextInt();
+		
+		int time = (out_d * 24 * 60 + out_h * 60 + out_m) - (in_d * 24 * 60 + in_h * 60 + in_m);
+		int charge = 3000;
+		
+		if(time > 30) {
+			charge += (time - 30) / 10 * 1000; 
+		}
+		
+		System.out.println("총 사용시간(분)은 " + time + "요금은 " + charge + "원입니다");
+	}
+
+}
+

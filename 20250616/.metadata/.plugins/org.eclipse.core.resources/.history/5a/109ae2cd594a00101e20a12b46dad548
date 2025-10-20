@@ -1,0 +1,18 @@
+package ssi;
+
+class A{
+	public String x() { return "x"; }
+}
+class B extends A{
+	public String y() { return "y"; }
+}
+
+public class Test03 {
+
+	public static void main(String[] args) {
+		A obj = new A();
+		
+		System.out.print(obj.x());
+	}
+
+}

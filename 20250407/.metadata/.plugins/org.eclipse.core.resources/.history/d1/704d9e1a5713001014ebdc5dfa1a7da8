@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class d20250407 {
+
+	public static void main(String[] args) {
+		System.out.println("숫자를 입력해주세요");
+		
+		Scanner s = new Scanner(System.in);
+		
+		int x = s.nextInt();
+		
+		if(x % 1 == 0 && x % x == 0) {
+			System.out.println("소수입니다")
+		}
+		else {
+			System.out.println("소수가 아닙니다");
+		}
+
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class Practice {
+
+	public static void main(String[] args) {
+		System.out.println("50미만의 자연수 중에서 3의 배수를 나열하고 그 합을 구합니다");
+
+		int sum = 0;
+		
+		for(int i = 0; i < 50; i+=3) {
+			if(i == 0) {
+				continue;
+			}
+			System.out.print(i + " ");
+			sum += i;
+		}
+		System.out.println("50미만의 자연수 중에서 3의 배수의 합은" + sum + "입니다.");
+	}
+
+}

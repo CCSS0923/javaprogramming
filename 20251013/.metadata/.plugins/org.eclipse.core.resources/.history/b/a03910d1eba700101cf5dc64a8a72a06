@@ -1,0 +1,26 @@
+package com.javamaster.mypackage;
+
+class Cat {
+	String breed;
+	String color;
+	
+	public void eat() {
+		System.out.println("먹이를 먹다");
+	}
+	
+	public void scratch() {
+		System.out.println("발톱으로 할퀴다");
+	}
+	
+	public void meow() {
+		System.out.println("야옹하고 울다");
+	}
+}
+
+public class Ex01 {
+	Cat c = new Cat();
+	
+	c.eat();
+	c.scratch();
+	c.meow();
+}

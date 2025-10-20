@@ -1,0 +1,2 @@
+Ctrl + Alt + 방향키 : 복사
+Ctrl + Shift + F : 행 정렬

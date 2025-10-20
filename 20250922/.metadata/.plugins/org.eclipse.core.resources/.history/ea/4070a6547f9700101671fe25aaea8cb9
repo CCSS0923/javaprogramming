@@ -1,0 +1,55 @@
+package pkg9;
+
+abstract class Shape {
+	String color;
+	
+	abstract double area();
+	
+	public abstract String toString();
+	
+	public Shape(String color) {
+		System.out.println("Shape 클래스 생성자 호출");
+		this.color = color;
+	}
+	public String getColor() { return color; }
+}
+
+class Circle extends Shape {
+	double radius;
+	public Circle(String color, double radius) {
+		System.out.println("Circle 클래스 생성자 호출");
+		super(color);
+		this.radius = radius;
+	}
+	double area() { return radius * radius * 3.14; }
+	public String toString() {
+		return "원의 색상은 : " + super.getColor() + ", 면적은 : " + area();
+	}
+}
+
+class Rectangle extends Shape {
+	double length;
+	double width;
+	public Rectangle(String color, double length, double width) {
+		super(color);
+		this.length = length;
+		this.width = width;
+	}
+	double area() { return length * width; }
+	public String toString() {
+		return "사각형의 색상은 : " + super.getColor() + ", 면적은 : " + area();
+	}
+}
+
+public class Ex91 {
+
+	public static void main(String[] args) {
+		Shape s1 = new Circle("빨간색", 2.2);
+		Shape s2 = new Rectangle("노란색", 2, 4);
+
+		System.out.println(s1.toString());
+		System.out.println(s2.toString());
+
+	}
+
+}

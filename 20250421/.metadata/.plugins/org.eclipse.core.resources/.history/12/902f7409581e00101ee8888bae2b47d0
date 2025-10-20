@@ -1,0 +1,13 @@
+
+public class M201 {
+	
+	public static void varArgTest(String ... v) {
+		System.out.println("number of arguments : " + v.length);
+		System.out.println(v);
+	}
+
+	public static void main(String[] args) {
+		varArgTest("노잼");
+	}
+
+}

@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+public class a20250519 {
+
+	public static void main(String[] args) {
+		
+		int[] A = new int [5];
+		
+		A[1] = 10;
+		A[2] = 20;
+		A[3] = 40;
+		A[4] = 50;
+		
+		int[] B = new int[] {100, 200, 300, 400, 500};
+		int[] C = { 100, 200, 300, 400, 500, 600, 700, 800};
+		int[] D = {};
+		D = C;
+		
+		for(int i = 0; i < A.length; i++) {
+			System.out.println(i + "번째 요소값 : " + A[i]);
+		}
+		System.out.println(Arrays.toString(A));
+		System.out.println(Arrays.toString(B));
+		System.out.println(Arrays.toString(C));
+		System.out.println(Arrays.toString(D));
+
+	}
+
+}

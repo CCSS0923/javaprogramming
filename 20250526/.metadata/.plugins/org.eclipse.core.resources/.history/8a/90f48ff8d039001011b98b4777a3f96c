@@ -1,0 +1,33 @@
+package OOP;
+
+public class tv01 {
+    public static class Tv {
+        String model;
+        String color;
+        int size;
+        boolean power;
+        int channel;
+        int volume;
+
+        void power() { power = true; }
+        void channelUp() { ++channel; }
+        void channelDown() { --channel; }
+        void volumeUp() { ++volume; }
+        void volumeDown() { --volume; }
+    }
+
+	public static void main(String[] args) {
+		Tv t = new Tv();
+
+		t.model = "Ultra";
+		t.size = 64;
+		t.color = "black";
+		t.channel = 9;
+		t.volume = 5;
+
+		System.out.println("이 TV는 " + t.model + "이며, " + "색상은 " + t.color + "입니다");
+		System.out.println("현재 channel은 " + t.channel);
+		System.out.println("현재 Volume은 " + t.volume);
+		System.out.println();
+	}
+}

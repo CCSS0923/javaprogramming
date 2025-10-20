@@ -1,0 +1,16 @@
+package a20250602;
+
+class Persion0 {
+	public String name = "김철수";
+	public int age;
+	public String adress;
+}
+
+public class Exp0 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

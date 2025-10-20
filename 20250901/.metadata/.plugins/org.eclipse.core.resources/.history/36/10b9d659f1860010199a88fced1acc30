@@ -1,0 +1,68 @@
+
+public class Ex00 {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		System.out.println("유한대학교");
+		System.out.println("컴퓨터\n 소프트웨어공학");
+		
+/*		System.out.println("컴퓨터 소프트웨어공학");
+		System.out.println("컴퓨터 소프트웨어공학");
+		System.out.println("컴퓨터 소프트웨어공학");	*/
+		
+		int a = 10;
+		int b = 5;
+		int c = 3;
+		
+		System.out.println(a + b);
+		System.out.println(a - b);
+		System.out.println(a * b);
+		System.out.println(a % b);
+		System.out.println(a % c);
+		
+		for(int i = 1; i <= 4; i++)
+		{
+			for(int j = 1; j <= i; j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		for(int i = 5; i >= 1; i--)
+		{
+			for(int j = 1; j <= i; j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		for(int i = 5; i >= 1; i--)
+		{
+			for(int j = 1; j <= i; j++)
+			{
+				System.out.print(" ");
+			}
+			for(int k = 5; k >= i; k--)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		for(int i = 4; i >= 1; i--)
+		{
+			for(int j = 4; j >= i; j--)
+			{
+				System.out.print(" ");
+			}
+			for(int k = 1; k <= i; k++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+}

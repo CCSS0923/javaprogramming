@@ -1,0 +1,25 @@
+package ssi;
+
+class Point {
+	int x = 100;
+	int y = 100;
+	Point(){
+		x = 10;
+		y = 20;
+	}
+	void print() {
+		System.out.println(x + "," + y);
+	}
+}
+
+public class Test01 {
+
+	public static void main(String[] args) {
+		Point p1 = new Point();
+		Point p2 = new Point();
+		
+		p1.print();
+		p2.print();
+	}
+
+}
