@@ -1,0 +1,18 @@
+package secinter;
+
+interface Data {
+	int count = 100;
+	void print();
+}
+
+class ChildData implements Data {
+	public void print() { System.out.println("I am ChildData print"); }
+}
+
+public class Code168 {
+	public static void main(String[] args) {
+		Data x = new ChildData();
+		x.print();
+		System.out.println("count : " + Data.count);
+	}
+}

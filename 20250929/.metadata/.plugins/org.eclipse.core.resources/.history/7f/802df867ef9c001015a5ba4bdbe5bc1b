@@ -1,0 +1,22 @@
+package abs2;
+
+interface Parent {
+	void printInfo();
+	void printSport();
+}
+
+class Father implements Parent {
+	public void printInfo() { System.out.println("아버지 입니다"); }
+	public void printSport() { System.out.println("Golf 즐겨요"); }
+}
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		Father f = new Father();
+		f.printInfo();
+		f.printSport();
+
+	}
+
+}

@@ -1,0 +1,6 @@
+package abs2;
+
+public class Father implements Parent{
+	void printInfo() { System.out.print("아버지 입니다"); }
+	void printSport() { System.out.print("아버지 운동은 Golf"); }
+}

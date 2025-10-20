@@ -1,0 +1,7 @@
+package abs2;
+
+public interface Parent {
+	void printInfo();
+	void printSport();
+//	void printInfo() { System.out.print("라라라") };
+}

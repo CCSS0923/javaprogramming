@@ -1,0 +1,15 @@
+package abs2;
+
+interface Parent {
+	void printInfo();
+	void printSport();
+}
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
