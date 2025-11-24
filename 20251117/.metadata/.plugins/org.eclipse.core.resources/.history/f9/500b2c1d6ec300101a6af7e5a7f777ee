@@ -1,0 +1,35 @@
+import java.util.LinkedList;
+
+public class Ex13_02 {
+
+	public static void main(String[] args) {
+		LinkedList<String> students = new LinkedList<String>();
+		
+		students.add("김철수");
+		students.add("나형두");
+		students.add("도노반");
+		students.add("람보");
+		students.add("마동석");
+		students.add("박두석");
+		System.out.println(students);
+
+		students.addFirst("나타샤");
+		students.addLast("모란봉");
+		System.out.println(students);
+		students.add(1, "백두산");
+		students.set(6, "한라산");
+		System.out.println(students);
+		
+		students.removeFirst();
+		students.removeLast();
+		System.out.println(students);
+		students.remove(1);
+		System.out.println(students);
+		
+		System.out.println(students.size());
+		System.out.println(students.get(0));
+		System.out.println(students.get(1));
+		System.out.println(students.contains("마동석"));
+		System.out.println(students.indexOf("나타샤"));
+	}
+}

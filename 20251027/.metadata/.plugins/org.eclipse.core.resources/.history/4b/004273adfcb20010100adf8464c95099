@@ -1,0 +1,29 @@
+package com.section33;
+
+import java.util.Scanner;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+
+		 Integer a = 3; 
+		 int i1 = a.intValue(); // Integer를 명시적으로 int로 변환
+		 int j1 = a;               // 언박싱
+		 System.out.println(a +" "+ i1 +" "+ j1);
+		 System.out.println(j1 + j1);
+		 System.out.println(a + j1);
+		 
+		 
+		 
+		 int b = 20;
+		 Integer i2 = Integer.valueOf(b); // int를 명시적으로 Integer로 변환
+		 Integer j2 = b;                         // 오토언박싱
+		 System.out.println(b +" "+ i2 +" "+ j2);
+		 System.out.println(b + j2);
+		 
+		 System.out.println(Integer.valueOf("20") + Integer.valueOf("20"));
+		 
+		 System.out.println(Integer.parseInt("10") + Integer.parseInt("10"));
+ 
+	}
+}

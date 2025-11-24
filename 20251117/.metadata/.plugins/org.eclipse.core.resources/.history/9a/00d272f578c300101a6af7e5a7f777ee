@@ -1,0 +1,15 @@
+import javax.swing.JFrame;
+
+public class ExFrame01 {
+
+	public static void main(String[] args) {
+		JFrame frame = new JFrame(); // JFrame 생성
+		
+		frame.setTitle("프레임 생성1"); // 프레임 제목 설정
+		frame.setSize(400, 200); // 프레임 크기 설정
+		frame.setVisible(false); // 프레임 보이기 설정
+//		frame.setVisible(false); // 프레임 보이기 설정
+
+	}
+
+}

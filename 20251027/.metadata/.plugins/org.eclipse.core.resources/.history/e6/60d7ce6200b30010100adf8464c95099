@@ -1,0 +1,46 @@
+package com.section33;
+
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat; // 날짜 형식을 정확히 지정하기 위해 사용
+import java.text.ParseException; // 날짜 문자열 변환 시 발생 가능한 예외 처리
+
+public class Ex00 {
+
+	public static void main(String[] args) {
+		// 1. 생일 변수 설정
+        // 여기에 본인의 생년월일을 "yyyy/MM/dd" 형식으로 넣어주세요.
+        String birthDateStr = "2001/04/11"; // 예시: 1990년 1월 1일
+
+        // 날짜 문자열을 Date 객체로 변환하기 위한 포맷 지정
+        // DateFormat의 서브 클래스인 SimpleDateFormat을 사용합니다.
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+        
+        try {
+            // 2. 생일 Date 객체와 현재 Date 객체 생성
+            Date birthDate = dateFormat.parse(birthDateStr);
+            Date currentDate = new Date(); // 현재 날짜와 시간
+
+            // 3. 두 날짜를 밀리초(ms)로 변환하여 차이 계산
+            // getTime()은 1970년 1월 1일 00:00:00 GMT 이후의 밀리초를 반환합니다.
+            long diffMillies = currentDate.getTime() - birthDate.getTime();
+
+            // 4. 밀리초 차이를 일(day)로 변환
+            // 하루(1일)를 밀리초로 환산한 값: 24시간 * 60분 * 60초 * 1000밀리초
+            final long MILLIES_PER_DAY = 24 * 60 * 60 * 1000L;
+            
+            // 일자 수 차이 계산
+            long daysAlive = diffMillies / MILLIES_PER_DAY;
+
+            // 5. 결과 출력
+            System.out.println("🎂 당신의 생일: " + dateFormat.format(birthDate));
+            System.out.println("🗓️ 오늘 날짜: " + dateFormat.format(currentDate));
+            System.out.println("🥳 태어난 날부터 오늘까지 살아온 날(day) 수: " + daysAlive + "일");
+
+        } catch (ParseException e) {
+            // 날짜 문자열("1990/01/01")의 형식이 SimpleDateFormat("yyyy/MM/dd")과 일치하지 않을 때 예외 처리
+            System.err.println("날짜 형식 오류: 생일 문자열이 지정된 형식(yyyy/MM/dd)과 일치하는지 확인해 주세요.");
+            e.printStackTrace();
+        }
+    }
+}

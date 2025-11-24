@@ -1,0 +1,27 @@
+package com.section11;
+
+import com.section11.Cat;
+
+public class Ex03 {
+    public static void main(String[] args) {
+    	
+        Cat c1 = new Cat();
+        Cat c2 = new Cat();
+        
+    	  c1.eat();
+    	  c1.scratch();
+    	  c1.meow();
+    	
+    	  c2.eat();
+    	  c2.scratch();
+    	  c2.meow();
+
+        System.out.println(c1.toString());
+        System.out.println(c2.toString());
+        
+        System.out.println(c1.equals(c2));
+        
+        c1 = c2;
+        System.out.println(c1.equals(c2));
+    }
+}

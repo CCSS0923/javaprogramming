@@ -1,0 +1,17 @@
+package com.section33;
+
+import java.util.Date;
+import java.text.DateFormat;
+
+public class Ex00 {
+
+	public static void main(String[] args) {
+		Date currentDate = new Date();
+		System.out.println("현재 날짜 : " + currentDate);
+		
+		String dateToStr = DateFormat.getDateInstance().format(currentDate);
+		System.out.println("DateFormat.getDateInstance(): " + dateToStr);
+
+	}
+
+}

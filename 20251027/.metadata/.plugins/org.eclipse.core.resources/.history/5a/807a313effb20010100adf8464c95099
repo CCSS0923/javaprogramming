@@ -1,0 +1,13 @@
+package com.section33;
+
+import java.util.Date;
+
+public class Ex00 {
+
+	public static void main(String[] args) {
+		Date currentDate = new Date();
+		System.out.println("현재 날짜 : " + currentDate);
+
+	}
+
+}

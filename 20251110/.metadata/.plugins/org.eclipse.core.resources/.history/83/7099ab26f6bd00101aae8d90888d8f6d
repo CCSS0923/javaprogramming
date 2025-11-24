@@ -1,0 +1,23 @@
+import java.util.Stack;
+
+public class Code11 {
+
+	public static void main(String[] args) {
+		Stack<Integer> stk = new Stack<Integer>();
+
+		stk.push(10);
+		stk.push(20);
+		stk.push(30);
+		stk.push(40);
+		stk.push(50);
+		
+		Integer data = stk.pop();
+		System.out.println(data);
+		
+		stk.push(77);
+		while(!stk.empty())
+			System.out.print(stk.pop() + " ");
+		
+	}
+
+}

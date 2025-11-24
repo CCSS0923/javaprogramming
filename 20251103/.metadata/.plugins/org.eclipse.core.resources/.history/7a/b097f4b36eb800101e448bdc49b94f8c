@@ -1,0 +1,18 @@
+package pkg11;
+
+public class Ex02 {
+	public static void main(String[] args) {
+		try {
+			Integer in = new Integer("abc"); //문자열을 숫자로 변경하여 예외 발생
+			in.intValue();
+		}
+		catch(ArithmeticException e) {
+			System.out.println("ArithmeticException 예외 발생 " + e);
+		}
+		catch(NumberFormatException e) {
+			System.out.println("NumberFormatException 예외 발생 " + e.getMessage());
+		}
+		System.out.println("try ~ catch문 외부 문장 입니다");
+		
+	}
+}
